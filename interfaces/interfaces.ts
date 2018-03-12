@@ -59,8 +59,8 @@ const oldPerson:AgedPerson = {
     age : 60,
     firstName:'Max',
         greet(lastName:string){
-        console.log('Hello');
+        console.log('Hello Oldie ' + lastName);
     }
 }
 
-oldPerson.greet('Subbu');
+oldPerson.greet('Subramanyam');
