@@ -46,3 +46,18 @@ simpleMath.multiplyValue = 20;
 
 //simpleMath.multiplyValue = 'Testing String';
 console.log(simpleMath.calculate());
+
+//Multi Generic Class
+class ComplexMath<T extends number , U extends number | string>{
+    baseValue : T;
+    multiplyValue : U;
+    calculate(): number{
+        return this.baseValue * +this.multiplyValue;
+    }
+}
+
+const complexMath = new ComplexMath();
+complexMath.baseValue = 10;
+complexMath.multiplyValue = '20';
+
+console.log(complexMath.calculate());
